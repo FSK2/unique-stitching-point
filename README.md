@@ -16,10 +16,10 @@ A modern, responsive, bilingual (English & Urdu RTL), theme-switchable (Heritage
    - Instant live language switcher with full Right-to-Left (RTL) layout switching and Noto Nastaliq Urdu typography.
 3. **Specialties Showcase**:
    - Sharara (شرارہ), Gharara (غرارہ), Lehenga (لہنگا), Bridal Suit (برائیڈل سوٹ), Saree & Blouse Stitching (ساڑھی و بلاؤز).
-4. **Interactive WhatsApp Consultation & Booking**:
-   - Modal form allows customers to select fitting dates, preferred garment styles, and notes, automatically generating formatted WhatsApp messages sent directly to Master Sajjad (`0343-6175678` / `+92 348 6567127`).
-5. **Location & Phone Direct Access**:
-   - Instant click-to-call for Mobile (`0343-6175678`) and Landline (`+92 41 1234567`).
+4. **Interactive WhatsApp Consultation & Price Quotations**:
+   - Direct 1-click WhatsApp price quotation ("ladies suit charges kia hain ?") and modal form for fitting consultations sent directly to Master Sajjad (`0343-6175678`).
+5. **Location & Direct Call Access**:
+   - Instant click-to-call for Mobile & WhatsApp (`0343-6175678`).
    - One-click Google Maps location directions for Saeed Colony No. 2, Faisalabad.
 
 ---
@@ -64,4 +64,4 @@ A modern, responsive, bilingual (English & Urdu RTL), theme-switchable (Heritage
 
 ---
 
-*Crafted by Mobile One Media Services (https://mobileonemedia.com)*
+*Crafted by Mobile One Media Services (https://www.mobileonemedia.com/ | Phone/WhatsApp: 00923486567127 | Email: info@mobileonemedia.com)*

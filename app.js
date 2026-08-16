@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `📝 *Notes/Measurements:* ${notes || 'None'}\n\n` +
         `Sent via Unique Stitching Point Website`;
 
-      const whatsappNumber = '923486567127';
+      const whatsappNumber = '923436175678';
       const encodedMsg = encodeURIComponent(messageText);
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMsg}`;
 

@@ -1,0 +1,4 @@
+mingit/
+gh_cli/
+*.zip
+.DS_Store

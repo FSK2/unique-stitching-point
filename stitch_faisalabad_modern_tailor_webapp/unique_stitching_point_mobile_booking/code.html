@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Book Consultation - Unique Stitching Point</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#ffe088",
+                        "secondary-fixed-dim": "#c6c7c2",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container": "#201f1f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "secondary": "#c6c7c2",
+                        "outline": "#99907c",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#313030",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "tertiary-container": "#b4b2b2",
+                        "surface-dim": "#131313",
+                        "on-surface": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "tertiary": "#d0cdcd",
+                        "surface-tint": "#e9c349",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "outline-variant": "#4d4635",
+                        "surface-bright": "#3a3939",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-fixed": "#1a1c19",
+                        "on-primary": "#3c2f00",
+                        "on-secondary": "#2f312e",
+                        "surface-variant": "#353534",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-container": "#b8b9b4",
+                        "primary": "#f2ca50",
+                        "on-secondary-fixed-variant": "#454744",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-container": "#484a46",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed": "#e3e3de",
+                        "on-tertiary-container": "#454544",
+                        "background": "#131313",
+                        "on-primary-container": "#554300",
+                        "inverse-primary": "#735c00",
+                        "primary-container": "#d4af37",
+                        "surface": "#131313",
+                        "inverse-on-surface": "#313030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-lg": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #0A0A0A; color: #e5e2e1; }
+        .glass-panel { background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(212, 175, 55, 0.1); }
+        .glow-shadow:focus-within { box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); border-color: #d4af37; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline/30 dark:border-outline-variant/30 transition-all duration-300">
+<div class="max-w-[1200px] mx-auto flex justify-between items-center px-gutter py-4">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight" href="#">Unique Stitching Point</a>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant font-label-md hover:text-primary transition-colors">اردو</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<nav class="hidden md:flex gap-6">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About Us</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Portfolio</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-24 pb-margin-mobile px-gutter">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="relative w-full h-[60vh] rounded-xl overflow-hidden">
+<img alt="High-end fashion garment detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLs0P7wpfjnBbmVcWqR3PWET-cbtiSelDgMm1YdgjJm8V721IuzU2ZpX1WBIA2TegKX66ZjqwTa-eTqcbY5EUCCWb5JHpJS3AAVR1hW5rcPTBOPHqP-kIJ6rUsrNpQ7Jn5GF0GkQaf8_fnTw2KqYkh0t0zYtIFrHXXaczla_1_ZIsd79ClH2tWMz0IQOq-wfMhQUnHYiy2w2P8xxb7cn8OFa-CJgth62U4pL4Mgc3ajQD6nNE-mQdWoNbcEh">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full text-center">
+<h1 class="font-display-lg text-primary mb-4">Masterful Craftsmanship</h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">Experience the pinnacle of bespoke tailoring. From heritage bridals to modern classics.</p>
+</div>
+</div>
+</section>
+<!-- Specialties Section -->
+<section class="mb-16">
+<h2 class="font-headline-lg-mobile text-center text-primary mb-12">Our Specialities</h2>
+<div class="grid grid-cols-1 gap-6">
+<!-- Specialty Card 1 -->
+<div class="glass-panel rounded-lg p-6 flex flex-col items-center text-center">
+<h3 class="font-headline-md text-on-surface mb-2">Sharara</h3>
+<span class="font-display-lg text-outline-variant opacity-30 absolute -top-4 right-4 z-[-1]">شرارہ</span>
+<p class="text-on-surface-variant font-body-md">Elegant and flowing traditional wear.</p>
+</div>
+<!-- Specialty Card 2 -->
+<div class="glass-panel rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden">
+<h3 class="font-headline-md text-on-surface mb-2">Gharara</h3>
+<span class="font-display-lg text-outline-variant opacity-30 absolute -top-4 right-4 z-[-1]">غرارہ</span>
+<p class="text-on-surface-variant font-body-md">Timeless elegance for special occasions.</p>
+</div>
+<!-- Specialty Card 3 -->
+<div class="glass-panel rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden">
+<h3 class="font-headline-md text-on-surface mb-2">Lehenga</h3>
+<span class="font-display-lg text-outline-variant opacity-30 absolute -top-4 right-4 z-[-1]">لہنگا</span>
+<p class="text-on-surface-variant font-body-md">Exquisite craftsmanship for your big day.</p>
+</div>
+<!-- Specialty Card 4 -->
+<div class="glass-panel rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden">
+<h3 class="font-headline-md text-on-surface mb-2">Bridal Suit</h3>
+<span class="font-display-lg text-outline-variant opacity-30 absolute -top-4 right-4 z-[-1]">عروسی جوڑا</span>
+<p class="text-on-surface-variant font-body-md">Custom-tailored perfection.</p>
+</div>
+<!-- Specialty Card 5 -->
+<div class="glass-panel rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden">
+<h3 class="font-headline-md text-on-surface mb-2">Saree</h3>
+<span class="font-display-lg text-outline-variant opacity-30 absolute -top-4 right-4 z-[-1]">ساڑھی</span>
+<p class="text-on-surface-variant font-body-md">Graceful draping and precise stitching.</p>
+</div>
+</div>
+</section>
+<!-- Booking Form -->
+<section class="mb-16">
+<div class="glass-panel rounded-xl p-8 max-w-md mx-auto">
+<h2 class="font-headline-lg-mobile text-center text-primary mb-8">Schedule Consultation</h2>
+<form class="space-y-6">
+<div class="glow-shadow rounded-DEFAULT transition-all">
+<label class="block font-label-md text-on-surface-variant mb-2 uppercase tracking-wider" for="name">Full Name</label>
+<input class="w-full bg-[#1A1A1A] border border-outline-variant rounded-DEFAULT px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-0 transition-colors" id="name" placeholder="Enter your name" type="text">
+</div>
+<div class="glow-shadow rounded-DEFAULT transition-all">
+<label class="block font-label-md text-on-surface-variant mb-2 uppercase tracking-wider" for="phone">Phone Number</label>
+<input class="w-full bg-[#1A1A1A] border border-outline-variant rounded-DEFAULT px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-0 transition-colors" id="phone" placeholder="+92 300 0000000" type="tel">
+</div>
+<div class="glow-shadow rounded-DEFAULT transition-all">
+<label class="block font-label-md text-on-surface-variant mb-2 uppercase tracking-wider" for="service">Service Type</label>
+<select class="w-full bg-[#1A1A1A] border border-outline-variant rounded-DEFAULT px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-0 transition-colors appearance-none" id="service">
+<option>Bridal Consultation</option>
+<option>Lehenga Stitching</option>
+<option>Sharara / Gharara</option>
+<option>Saree Draping &amp; Stitching</option>
+<option>General Tailoring</option>
+</select>
+</div>
+<div class="glow-shadow rounded-DEFAULT transition-all">
+<label class="block font-label-md text-on-surface-variant mb-2 uppercase tracking-wider" for="date">Preferred Date</label>
+<input class="w-full bg-[#1A1A1A] border border-outline-variant rounded-DEFAULT px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-0 transition-colors" id="date" type="date">
+</div>
+<div class="glow-shadow rounded-DEFAULT transition-all">
+<label class="block font-label-md text-on-surface-variant mb-2 uppercase tracking-wider" for="notes">Special Requirements</label>
+<textarea class="w-full bg-[#1A1A1A] border border-outline-variant rounded-DEFAULT px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-0 transition-colors" id="notes" placeholder="Fabric details, urgency, etc." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-[#0A0A0A] font-label-md uppercase tracking-widest py-4 rounded-DEFAULT hover:bg-primary-fixed transition-colors mt-8" type="submit">
+                        Book Appointment
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<section class="mb-16 px-gutter">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- About Business -->
+        <div class="glass-panel rounded-xl p-8">
+            <h2 class="font-headline-md text-primary mb-4">About Unique Stitching Point</h2>
+            <p class="font-body-md text-on-surface-variant mb-4">
+                Led by the expertise of Master Sajjad, Unique Stitching Point is Faisalabad's premier destination for bespoke ladies' tailoring. We specialize in the intricate craftsmanship of traditional heritage wear, including Shararas, Ghararas, Lehengas, and elegant Sarees.
+            </p>
+            <p class="font-body-md text-on-surface-variant">
+                Our commitment to precision and timeless elegance ensures that every garment is a masterpiece, custom-tailored to perfection for your most special occasions.
+            </p>
+        </div>
+        <!-- Digital Partner -->
+        <div class="glass-panel rounded-xl p-8 flex flex-col justify-center">
+            <h2 class="font-label-md text-primary uppercase tracking-widest mb-4">Digital Partner</h2>
+            <p class="font-body-md text-on-surface-variant mb-6">
+                This digital boutique experience was crafted by <span class="text-primary font-medium">Mobile One Media Services</span>.
+            </p>
+            <div class="flex flex-col gap-3">
+                <a href="https://www.mobileonemedia.com" target="_blank" class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary">language</span>
+                    <span class="font-label-md">www.mobileonemedia.com</span>
+                </a>
+                <a href="mailto:info@mobileonemedia.com" class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary">mail</span>
+                    <span class="font-label-md">info@mobileonemedia.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section><footer class="bg-surface-container dark:bg-surface-container-highest w-full mt-auto border-t border-outline/20 dark:border-outline-variant/20">
+<div class="max-w-[1200px] mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<h4 class="font-bold text-xl text-primary dark:text-inverse-primary">Unique Stitching Point</h4>
+<p class="text-sm text-on-surface-variant dark:text-surface-variant">Master Sajjad | Experts in Ladies Suits</p>
+<p class="text-xs text-on-surface-variant dark:text-surface-variant opacity-80 mt-4">
+Â© 2026 Unique Stitching Point Faisalabad. All rights reserved.
+</p>
+</div>
+<div class="space-y-4">
+<h5 class="text-xs font-semibold text-on-surface dark:text-inverse-on-surface uppercase tracking-wider mb-2">Contact Details</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-semibold" href="tel:03436175678">Phone & WhatsApp: 0343-6175678</a></li>
+<li class="text-on-surface-variant dark:text-surface-variant">Saeed Colony No. 2, Rehman Street, Faisalabad</li>
+</ul>
+</div>
+<div class="space-y-3">
+<h5 class="text-xs font-semibold text-on-surface dark:text-inverse-on-surface uppercase tracking-wider mb-2">WEB APP DEVELOPMENT</h5>
+<p class="text-xs text-on-surface-variant dark:text-surface-variant">
+Designed and crafted by <a href="https://www.mobileonemedia.com/" target="_blank" class="text-primary hover:underline font-semibold">Mobile One Media Services</a>.
+</p>
+<div class="text-xs text-on-surface-variant dark:text-surface-variant space-y-1.5 pt-1">
+<div>âœ‰ï¸ Email: <a href="mailto:info@mobileonemedia.com" class="hover:text-primary font-semibold">info@mobileonemedia.com</a></div>
+<div>ðŸ’¬ WhatsApp Business: <a href="https://wa.me/923486567127" target="_blank" class="hover:text-primary font-semibold">00923486567127</a></div>
+<div>ðŸŒ Website: <a href="https://www.mobileonemedia.com/" target="_blank" class="hover:text-primary font-semibold">www.mobileonemedia.com</a></div>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
